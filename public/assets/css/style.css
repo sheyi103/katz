@@ -1,0 +1,2310 @@
+/*
+Theme Name: Jilond
+Author: jSoft
+Version: 1.0
+Description: Transportation and Logistics HTML5 Template
+*/
+
+/**
+ *** CSS Indexing ***
+ * THEME DEFAULT CSS
+ * RESET CSS
+ * HEADER TOP CSS
+ * HEADER BOTTOM CSS
+ * MENU AREA CSS
+ * HERO AREA CSS
+ * ABOUT AREA CSS
+ * SERVICE AREA CSS
+ * SKILLS AREA CSS
+ * CHOOSE AREA CSS
+ * TEAM AREA CSS
+ * PORTFOLIO AREA CSS
+ * PRICING AREA CSS
+ * CALCULATOR AREA CSS
+ * BLOG AREA CSS
+ * PARTNER AREA CSS
+ * FOOTER AREA CSS
+ * HOME 2 PAGE DEFAULT CSS
+ * SERVICE AREA CSS
+ * ABOUT AREA CSS
+ * SERVICE SLIDER AREA CSS
+ * CHOOSE AREA CSS
+ * TESTIMONIAL AREA CSS
+ * TEAM AREA CSS
+ * PRICING AREA CSS
+ * CALCULATOR AREA CSS
+ * PORTFOLIO AREA CSS
+ * HOME 3 PAGE DEFAULT CSS
+ * HERO AREA CSS
+ * SERVICE AREA CSS
+ * PORTFOLIO AREA CSS
+ * TESTIMONIAL AREA CSS
+ * SKILLS AREA CSS
+ * GET A QUOTE CSS
+ * ABOUT 1 PAGE CSS
+ * BLOG PAGE CSS
+ * BLOG DETAILS PAGE CSS
+ * 404 PAGE CSS
+ * SCROLL-TO-TOP CSS
+ * PRE LOADER CSS
+ *  CSS
+**/
+
+/*----------------------------------
+--------- THEME DEFAULT CSS --------
+----------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+body {
+    line-height: 24px;
+    font-size: 14px;
+    color: #333333;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*----------------------------
+---------- RESET CSS ---------
+----------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+	color: #333333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0px;
+}
+p{
+    /*color: #777;*/
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 22px;
+
+}
+h1 {
+    font-size: 42px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 14px;
+}
+a {
+    transition: 0.4s;
+}
+a,
+a:hover {
+    color: #333333;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    width: 100%;
+    border: none;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+button:focus {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+select:focus,
+select:active {
+    box-shadow: none;
+    border: 0;
+    outline: 0
+}
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+select,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+input[type="password"],
+textarea {
+    background: transparent;
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid #f1f1f1;
+    color: #666;
+    margin-bottom: 15px;
+}
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+button {
+	cursor: pointer;
+}
+.sec-title {
+    text-align: center;
+}
+.sec-title h2 {
+	position: relative;
+	top: -5px;
+	font-size: 32px;
+}
+.sec-title.mb-50 {
+    margin-bottom: 40px;
+}
+.sec-title.mb-20 {
+    margin-bottom: 10px;
+}
+.sec-title h2 span {
+    color: #ff0000;
+}
+.pt-100 {
+    padding: 100px 0 0;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.ptb-100 {
+    padding: 100px 0;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+.owl-nav div {
+	position: absolute;
+    top: 50%;
+    left: 0;
+    width: 35px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 8px;
+    transition: 0.4s;
+    margin-top: -20px;
+}
+.owl-nav div:hover {
+	background: #ff0000;
+}
+.owl-nav div.owl-next {
+    right: 0;
+    left: auto;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+.owl-dot {
+    width: 20px;
+    height: 3px;
+    background: #0c1239;
+    display: inline-block;
+    margin: 0 3px;
+}
+.owl-dot.active {
+    background: #ff0000;
+}
+.theme-btn {
+    background: #ff0000;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    padding: 6px 22px;
+	text-transform: uppercase;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.theme-btn:hover {
+    background: #0c1239;
+    color: #fff;
+}
+.theme-btn6 {
+    background: transparent;
+    border: 1px solid #fff;
+}
+.theme-btn6:hover {
+    background: #ff0000;
+    border: 1px solid #ff0000;
+}
+.flexbox-center {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.display-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.display-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*--------------------------------------
+-------- HEADER TOP AREA CSS START --------
+---------------------------------------*/
+.header-top-content li {
+    display: inline-block;
+	margin-right: 12px;
+    color: #fff;
+}
+
+.header-top {
+    background: #0c1239;
+    padding: 15px 0;
+}
+
+.header-top-content a {
+    color: #fff;
+}
+
+.header-top-content li i {
+    color: #ff0000;
+    margin-right: 5px;
+}
+.social-icons a {
+	font-size: 16px;
+    margin-left: 5px;
+}
+.header-top-content a:hover {
+    color: #ff0000;
+}
+/*--------------------------------------
+--------- HEADER TOP AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+------ HEADER BOTTOM AREA CSS START ------
+---------------------------------------*/
+.header-bottom {
+    padding: 20px 0;
+}
+.header-info-item {
+    display: flex;
+    text-align: left;
+    margin-right: 50px;
+}
+.info-icon i {
+    color: #ff0000;
+    font-size: 18px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ff0000;
+    border-radius: 100%;
+    transition: all 0.4s;
+    display: block;
+}
+.info-icon i:hover {
+    background: #ff0000;
+    color: #fff;
+}
+.info-icon {
+    float: left;
+    margin-right: 14px;
+}
+.info-text {
+    overflow: hidden;
+}
+.header-bottom-right .flexbox-center {
+    justify-content: flex-end;
+}
+/*--------------------------------------
+------ HEADER BOTTOM AREA CSS END ------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- MENU AREA CSS START --------
+---------------------------------------*/
+.menubar li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 12px;
+    position: relative;
+}
+.menubar li a {
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: large;
+}
+.menubar li.active > a,
+.menubar li a:hover {
+    color: #ff0000;
+}
+.mainmenu li ul {
+    position: absolute;
+    left: -15px;
+    top: 100%;
+    z-index: 99;
+    background: #0c1239;
+    width: 200px;
+    padding: 10px;
+    transition: 0.4s;
+    transform: scale(0);
+}
+.mainmenu li ul li {
+    display: block;
+}
+.mainmenu li ul li a {
+    padding: 7px 0;
+    color: #fff;
+    font-size: 90%;
+}
+.menubar ul li ul li a::before {
+    width: 0 !important;
+}
+.menubar ul li ul li:hover a::before ,
+.menubar ul li ul li.active a::before {
+    width: 100% !important;
+}
+.mainmenu li:hover ul {
+    transform: scale(1);
+}
+.responsive-menu {
+    display: none;
+}
+.slicknav_nav {
+    background-color: #222222;
+    padding: 5px 12px;
+}
+.slicknav_nav li {
+    display: block;
+}
+.slicknav_nav li a i {
+	display: none;
+}
+.slicknav_nav a:hover, 
+.slicknav_nav .slicknav_row:hover {
+    background: transparent;
+    color: #fff;
+}
+.menubar ul li a a::before {
+    display: none;
+}
+a.slicknav_item.slicknav_row {
+    display: inline-block;
+}
+.slicknav_btn {
+    margin: 0;
+    border-radius: 0;
+}
+.slicknav_menu {
+	padding: 15px 0;
+    background: transparent;
+}
+.menu-area {
+    background: #0c1239;
+    margin: 0;
+}
+.menu-right input::-webkit-input-placeholder {
+    color: #333333;
+}
+.menu-right button {
+    color: #fff;
+}
+.menu-right {
+    text-align: right;
+}
+.navbar-form input {
+    border: 2px solid #0c1239 !important;
+    opacity: 1;
+    border-radius: 0;
+    border: none;
+    background: #fff;
+	color: #666;
+    padding: 6px 20px;
+    margin: 0;
+}
+.menubar {
+    position: relative;
+    z-index: 9999;
+}
+.menubar.sticky {
+    background: #0c1239;
+    position: fixed;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #fff;
+    top: 0;
+}
+.menubar.sticky .menu-area {
+    margin: 0 -15px;
+}
+.menubar.sticky li {
+	padding-left: 0;
+}
+.menubar.sticky .mainmenu li ul {
+	left: 0;
+}
+.menubar.sticky .menu-right {
+	padding-right: 0;
+}
+.menu-right button {
+    background: #ff0000;
+    border: none;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 8px 8px 0;
+}
+.menu-right form {
+    position: relative;
+	margin-bottom: 0;
+}
+.menu-right input {
+    border-radius: 8px;
+    background: #fff;
+    color: #333333;
+}
+li.showul > ul {
+    display: block;
+}
+.offcanvas-menu li {
+	cursor: pointer;
+}
+/*--------------------------------------
+--------- MENU AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- HERO AREA CSS START --------
+---------------------------------------*/
+.hero-area {
+    margin-top: -30px;
+    overflow: hidden;
+}
+.menubar input {
+    margin-bottom: 0;
+}
+.single-hero-area {
+    padding: 150px 0;
+    z-index: 1;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('../img/hero-area/hero-area-bg-1.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.hero-area1 {
+    background-image: url('../img/hero-area/hero-area-bg-1.jpg');
+}
+.hero-area2 {
+    background-image: url('../img/hero-area/hero-area-bg-2.jpg');
+}
+.hero-area3 {
+    background-image: url('../img/hero-area/hero-area-bg-3.jpg');
+}
+.hero-area4 {
+    background-image: url('../img/hero-area/hero-area-bg-4.jpg');
+}
+.single-hero-area::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    background: #000000;
+}
+.hero-area-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+	color: #fff;
+}
+.hero-area-content h1 {
+    color: #fff;
+    max-width: 510px;
+	text-transform: uppercase;
+}
+.hero-area-content p {
+    margin: 20px 0;
+}
+.hero-area-content .theme-btn {
+    margin-bottom: 15px;
+    margin-right: 15px;
+	border: 1px solid #ff0000;
+}
+.hero-area-content .theme-btn:hover {
+	border: 1px solid #0c1239;
+}
+.hero-area-content .theme-btn2 {
+	border: 1px solid #fff;
+}
+.hero-area-content .theme-btn2:hover {
+	border: 1px solid #ff0000;
+}
+.hero-area-content h1 span {
+    color: #ff0000;
+}
+.hero-area .owl-prev {
+    left: 0;
+    opacity: 0;
+}
+
+.hero-area .owl-nav div.owl-next {
+    right: 0;
+    opacity: 0;
+}
+
+.hero-area:hover .owl-nav div.owl-next {
+    right: 50px;
+    opacity: 1;
+}
+
+.hero-area:hover .owl-prev {
+    left: 50px;
+    opacity: 1;
+}
+/*------------------------------------
+--------- HERO AREA CSS END ---------
+------------------------------------*/
+
+/*------------------------------------
+-------- ABOUT AREA CSS START --------
+-------------------------------------*/
+.single-about-box {
+    margin-top: 30px;
+}
+.single-about-box > ul {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    margin: 0 -3px 25px;
+}
+
+.single-about-box > ul li a {
+    padding: 8px 8px 10px;
+    text-align: center;
+    border: 1px solid #0c1239;
+    display: inline-block;
+    width: 100%;
+}
+
+.single-about-box > ul li a.active {
+    background: #0c1239;
+}
+.single-about-box > ul li a, .single-about-box > ul li h6 {
+    color: #0c1239;
+}
+.single-about-box > ul li a.active, .single-about-box > ul li a.active h6 {
+    color: #fff;
+}
+
+.single-about-box > ul li i {
+    font-size: 18px;
+}
+
+.single-about-box p {
+    margin-bottom: 15px;
+}
+
+.single-about-box h4 {
+    margin-bottom: 18px;
+}
+
+.single-about-box > ul li {
+    flex: 1;
+    margin: 0 3px;
+}
+/*----------------------------------------
+------------ ABOUT AREA CSS END ----------
+-----------------------------------------*/
+
+/*-------------------------------------
+-------- SERVICE AREA CSS START --------
+--------------------------------------*/
+.service-area {
+	z-index: 1;
+	position: relative;
+    background-image: url(../img/service-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.service-area::before {
+	content: "";
+	top: 0;
+	left: 0;
+    opacity: 0.75;
+	right: 0;
+	bottom: 0;
+	background: #0c1239;
+	z-index: -1;
+	position: absolute;
+}
+.service-area h2 {
+	color: #fff;
+}
+.single-service-box p {
+    margin: 8px 0 15px;
+}
+.single-service-box {
+    background: #fff;
+}
+.single-service-box img {
+    display: block;
+}
+
+.service-box-info {
+    position: relative;
+    padding: 55px 20px 25px;
+    text-align: center;
+}
+.testimonial-slider .owl-dot ,
+.service-area .owl-dot {
+    background: #fff;
+}
+.testimonial-slider .owl-dot.active,
+.service-area .owl-dot.active {
+    background: #ff0000;
+}
+.service-box-icon i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #fff;
+    box-shadow: 0 2px 8px #aaa;
+    color: #0c1239;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 100%;
+    font-size: 35px;
+    transition: 0.4s;
+}
+.single-service-box:hover .service-box-icon i {
+    background: #ff0000;
+    color: #fff;
+}
+/*---------------------------------
+------- SERVICE AREA CSS END ------
+----------------------------------*/
+
+/*-------------------------------------
+-------- SKILLS AREA CSS START --------
+--------------------------------------*/
+.single-skill-box {
+    text-align: center;
+    margin-top: 30px;
+}
+.single-skill-box h1 {
+    font-size: 24px;
+    margin: 8px 0 2px;
+    color: #0c1239;
+}
+.single-skill-box i {
+    color: #ff0000;
+    font-size: 35px;
+    margin-top: 10px;
+    display: block;
+}
+/*-------------------------------------
+--------- SKILLS AREA CSS END ---------
+--------------------------------------*/
+
+/*--------------------------------------
+-------- CHOOSE AREA CSS START --------
+---------------------------------------*/
+.choose-area {
+    z-index: 1;
+    position: relative;
+    background-image: url(../img/choose-bg.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.choose-area::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+	width: 50%;
+    bottom: 0;
+    background: #0c1239;
+    z-index: -1;
+    position: absolute;
+}
+.choose-area::after {
+    content: "";
+    top: 0;
+    right: 0;
+    opacity: 0.75;
+	width: 50%;
+    bottom: 0;
+    background: #0c1239;
+    z-index: -1;
+    position: absolute;
+}
+.single-choose-box h2 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 30px;
+    top: -5px;
+    position: relative;
+}
+.single-choose-box li {
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.single-choose-box li:last-child {
+    margin-bottom: 0;
+}
+
+.single-choose-box li h4 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+.single-choose-box li .choose-icon {
+    width: 38px;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: url(../img/polygon.png) no-repeat center / 100% 100%;
+    margin-right: 18px;
+    float: left;
+}
+.choose-info {
+    overflow: hidden;
+}
+.single-testimonial-box {
+    background: #0c1239;
+    padding: 25px;
+    color: #fff;
+	position: relative;
+	z-index: 1;
+}
+.single-choose-box .single-testimonial-box {
+    background: rgba(12, 18, 57, 0.9);
+}
+
+.testimonial-box-top {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.author {
+    margin-right: 18px;
+    max-width: 100px;
+}
+/*--------------------------------------
+--------- CHOOSE AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- TEAM AREA CSS START --------
+---------------------------------------*/
+.single-team-member {
+    text-align: center;
+    transition: all 0.4s;
+	margin-top: 30px;
+	overflow: hidden;
+	position: relative;
+}
+.team-member-info h4 {
+	color: #fff;
+	margin-bottom: 2px;
+    text-transform: uppercase
+}
+.team-member-info {
+    padding: 15px 0 10px;
+    background: #0c1239;
+    color: #fff;
+    bottom: -42px;
+    left: 0;
+    width: 100%;
+    transition: all 0.4s;
+    position: absolute;
+}
+.team-member-icon {
+    border-top: 1px solid #fff;
+    margin-top: 14px;
+    padding-top: 5px;
+}
+.team-member-icon a {
+    color: #fff;
+	margin: 0 3px;
+	display: inline-block;
+}
+.team-member-icon a:hover {
+    transform: rotate(360deg);
+}
+.single-team-member:hover .team-member-info {
+    bottom: 0;
+}
+/*--------------------------------------
+--------- TEAM AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- PORTFOLIO AREA CSS START -------
+---------------------------------------*/
+.single-portfolio-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio-bg-1 {
+    background-image: url('../img/portfolio/portfolio1.jpg');
+}
+.portfolio-bg-2 {
+    background-image: url('../img/portfolio/portfolio2.jpg');
+}
+.portfolio-bg-3 {
+    background-image: url('../img/portfolio/portfolio3.jpg');
+}
+.portfolio-bg-4 {
+    background-image: url('../img/portfolio/portfolio4.jpg');
+}
+.portfolio-bg-5 {
+    background-image: url('../img/portfolio/portfolio5.jpg');
+}
+.portfolio-box-overlay {
+    padding: 15px;
+    transform: scaleX(0);
+    transition: all 0.4s;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0,.75);
+    height: 100%;
+    width: 100%;
+}
+.portfolio-content {
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.portfolio-bg-2 {
+    grid-row: span 2;
+}
+.portfolio-box-overlay h4 {
+    color: #fff;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.single-portfolio-box:hover .portfolio-box-overlay {
+    transform: scaleX(1);
+}
+.portfolio-box-overlay a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #ff0000;
+    display: inline-block;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 100%;
+}
+/*--------------------------------------
+--------- PORTFOLIO AREA CSS END --------
+---------------------------------------*/
+/*--------------------------------------
+-------- PRICING AREA CSS START --------
+---------------------------------------*/
+.single-pricing-box {
+    text-align: center;
+	margin-top: 30px;
+}
+.single-pricing-box ul li {
+    margin-bottom: 7px;
+}
+.pricing-box-top {
+    background: #ff0000;
+    padding: 25px 0 65px;
+    position: relative;
+    transition: all 0.4s;
+}
+.pricing-box-top h4 {
+    color: #fff;
+    text-transform: uppercase;
+}
+.pricing-box-overlay {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    font-size: 25px;
+    color: #333333;
+    font-weight: 500;
+    line-height: 100px;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+}
+.pricing-box-bottom {
+    padding: 70px 0 25px; */
+    background:;
+    background: #0c1239;
+    color: #fff;
+    transition: all 0.4s;
+}
+.single-pricing-box:hover .pricing-box-bottom {
+    background: #000;
+}
+.single-pricing-box ul {
+    padding-bottom: 15px;
+}
+/*--------------------------------------
+--------- PRICING AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+--------- CALCULATOR AREA START ---------
+---------------------------------------*/
+.calculator-area {
+    position: relative;
+    z-index: 1;
+    background: url('../img/calculate-bg.jpg') no-repeat center / cover;
+}
+.calculator-area::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    width: 51%;
+    bottom: 0;
+    background: #0c1239;
+    z-index: -1;
+    position: absolute;
+}
+.single-calculator-box h1 {
+    color: #fff;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 36px;
+    position: relative;
+    top: -8px;
+}
+.single-calculator-box input,
+.single-calculator-box,
+.single-calculator-box select,
+.single-calculator-box input::-webkit-input-placeholder {
+    color: #fff;
+}
+.single-calculator-box select option {
+    color: #333
+}
+
+.single-calculator-box select:focus {
+    border: 1px solid #f1f1f1;
+}
+
+.single-calculator-box #slider-range {
+    margin: 10px 0;
+}
+
+.single-calculator-box select {
+    margin-top: 10px;
+}
+
+.single-calculator-box #slider-range span {
+    display: none;
+    width: 10px;
+    background: #ff0000;
+}
+
+.single-calculator-box #slider-range span:last-child {
+    display: block;
+}
+.ui-slider-horizontal .ui-slider-range {
+    background: #000;
+}
+/*-------------------------------------
+--------- CALCULATOR AREA END ---------
+--------------------------------------*/
+
+/*--------------------------------------
+-------- BLOG AREA CSS START --------
+---------------------------------------*/
+.post-thumbnail {
+    overflow: hidden;
+	position: relative;
+}
+.post-thumbnail img {
+    transition: all 0.4s;
+}
+.single-post:hover .post-thumbnail img {
+    transform: scale(1.1);
+}
+.single-post {
+    transition: all 0.4s;
+	margin-top: 30px;
+    box-shadow: 0 0 8px #aaa;
+}
+.post-thumbnail .post-author a {
+    color: #fff;
+}
+.post-author a {
+    margin-right: 5px;
+    font-size: 13px;
+}
+.post-author a i {
+    margin-right: 3px;
+    color: #ff0000;
+}
+.single-post:hover .theme-btn {
+	background: #0c1239;
+}
+.post-details .post-author a:hover, .post-details a h4:hover {
+    color: #ff0000;
+}
+.post-author a:hover {
+    color: #ff0000;
+}
+.post-details > p {
+	margin-bottom: 15px;
+}
+.post-details {
+    padding: 6px 30px;
+    padding-left: 0;
+}
+.post-author {
+    margin: 10px 0 2px;
+}
+/*--------------------------------------
+----------- BLOG AREA CSS END ----------
+---------------------------------------*/
+
+/*------------------------------------
+------- PARTNER AREA CSS START -------
+-------------------------------------*/
+.partner-area {
+    background: #0c1239;
+}
+.partner-single-slide img {
+	width: auto !important;
+}
+.partner-single-slide {
+    height: 250px;
+	padding: 0 15px;
+}
+div#map {
+    height: 500px;
+    width: 100%;
+}
+/*-----------------------------------
+------- PARTNER AREA CSS END -------
+------------------------------------*/
+
+/*------------------------------------
+------- FOOTER AREA CSS START --------
+--------------------------------------*/
+.footer {
+    background: #0c1239;
+    color: #fff;
+	padding-top: 100px;
+}
+
+.footer a,.footer h4 {
+    color: #fff;
+}
+.widget-gallery {
+    overflow: hidden;
+}
+.footer h4.widget-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.widget-social-icons a {
+    width: 35px;
+    display: inline-block;
+    height: 35px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+	margin-top: 8px;
+    margin-right: 6px;
+    border-radius: 100%;
+}
+.widget>a > img {
+    margin-bottom: 20px;
+}
+.widget-social-icons a:hover {
+    background: #ff0000;
+    border: 1px solid #ff0000;
+    color: #fff;
+}
+
+.widget-social-icons {
+    margin-top: 15px;
+}
+.widget li i {
+    margin-right: 8px;
+    color: #ff0000;
+    font-size: 18px;
+}
+.widget li a:hover {
+    color: #ff0000;
+}
+
+.widget li {
+    margin-bottom: 6px;
+}
+
+.widget {
+    margin-bottom: 40px;
+}
+.single-widget-gallery a {
+    display: inline-block;
+}
+
+.single-widget-gallery {
+    width: 30.3333%;
+    float: left;
+	margin-bottom: 3%;
+    margin-right: 3%;
+}
+
+.widget-get-in-touch li i {
+	margin-right: 12px;
+}
+.widget-get-in-touch li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.widget-get-in-touch li span {
+    display: block;
+    font-weight: 500;
+}
+.copyright {
+    text-align: center;
+	margin-top: 60px;
+    padding: 25px 0;
+	background: #03111e;
+}
+.newsletter {
+    padding: 30px;
+    background: #ff0000;
+    margin-bottom: 50px;
+    display: flex;
+}
+.newsletter input::-webkit-input-placeholder {
+    color: #fff;
+}
+.newsletter-left {
+    flex: 1;
+}
+.newsletter-right {
+    flex: 3;
+}
+.newsletter-right input {
+    margin-bottom: 0;
+}
+.newsletter-right button {
+    background: #0c1536;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.newsletter-right button i {
+    font-size: 18px;
+}
+/*--------------------------------------
+--------- FOOTER AREA CSS END ---------
+---------------------------------------*/
+
+/*------------------------------------
+--- HOME 2 PAGE DEFAULT CSS START -----
+--------------------------------------*/
+.home2 .partner-area,
+.home2 .newsletter-right button,
+.home2 .footer,
+.home2 .single-post:hover .theme-btn,
+.home2 .choose-area::before,
+.home2 .choose-area::after,
+.home2 .testimonial-slide .owl-dot,
+.home2 .owl-dot,
+.home2 .menubar.sticky,
+.home2 ul.slicknav_nav,
+.home2 .mainmenu li ul,
+.home2 .owl-nav div:hover,
+.home2 .menu-area,
+.home2 .header-top {
+    background: #0032ab;
+}
+.home2 .widget li i,
+.home2 .widget li a:hover,
+.home2 .post-author a i,
+.home2 .post-author a i,
+.home2 .post-author a:hover,
+.home2 .post-details a h4:hover,
+.home2 .single-skill-box i,
+.home2 .hero-area-content h1 span,
+.home2 .menubar li a:hover,
+.home2 .menubar li.active > a,
+.home2 .header-top-content a:hover,
+.home2 .header-top-content li i {
+    color: #f6a604;
+}
+.home2 .info-icon i {
+    color: #f6a604;
+    border: 1px solid #f6a604;
+}
+.home2 .info-icon i:hover {
+    background: #f6a604;
+    color: #fff;
+}
+.home2 .service-slider .single-service-box:hover .service-box-icon i,
+.home2 .single-calculator-box #slider-range span,
+.home2 .newsletter,
+.home2 .team-member-info,
+.home2 .testimonial-slide .owl-dot.active,
+.home2 .owl-dot.active,
+.home2 .menu-right button {
+    background: #f6a604;
+}
+.theme-btn3 {
+    background: #f6a604;
+}
+.theme-btn3:hover {
+    background: #0032ab;
+}
+.home2 .widget-social-icons a:hover {
+    background: #f6a604;
+    border-color: #f6a604;
+}
+.home2 .copyright {
+    background: #041755;
+}
+.home2 .hero-area-content .theme-btn {
+    border: none;
+}
+/*-------------------------------------
+------ HOME 2 PAGE DEFAULT CSS END -----
+--------------------------------------*/
+
+/*--------------------------------------
+-------- SERVICE AREA CSS START --------
+---------------------------------------*/
+.service-box-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.8);
+    transition: all 0.4s;
+    color: #fff;
+    text-align: center;
+}
+.single-service-box2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 230px;
+    z-index: 1;
+    overflow: hidden;
+}
+.service-box-overlay2 h4,
+.service-box-overlay h4 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.service-box-overlay2 i,
+.service-box-overlay i {
+    font-size: 30px;
+    margin-bottom: 7px;
+    display: block;
+}
+.service-bg-1 {
+    background-image: url(../img/service/service4.jpg);
+}
+.service-bg-2 {
+    background-image: url(../img/service/service5.jpg);
+}
+.service-bg-3 {
+    background-image: url(../img/service/service6.jpg);
+}
+.service-bg-4 {
+    background-image: url(../img/service/service7.jpg);
+}
+.service-box-overlay2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 41, 163,0.8);
+    transition: all 0.4s;
+    color: #fff;
+    text-align: center;
+}
+.single-service-box2:hover .service-box-overlay2 {
+    top: 0;
+}
+.single-service-box2:hover .service-box-overlay {
+    top: -100%;
+}
+.service-box-overlay2 p {
+    margin: 10px 0;
+}
+.service-area2 {
+    margin-top: -80px;
+}
+/*-----------------------------------
+-------- SERVICE AREA CSS END --------
+------------------------------------*/
+
+/*------------------------------------
+-------- ABOUT AREA CSS START --------
+-------------------------------------*/
+.popup-youtube i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    top: 0;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    transition: all 0.4s;
+}
+.popup-youtube i:hover {
+    background: #fff;
+    color: #f6a604;
+}
+.single-about-box2 img {
+	display: block;
+}
+.single-about-box2 h3 {
+    text-transform: uppercase;
+}
+
+.single-about-box2 ul li {
+    margin-top: 6px;
+}
+
+.single-about-box2 ul li i {
+    margin-right: 10px;
+}
+.home2 .single-about-box2 ul li i {
+    color: #f6a604;
+}
+
+.single-about-box2 p {
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+/*-----------------------------------
+--------- ABOUT AREA CSS END --------
+------------------------------------*/
+
+/*--------------------------------------
+------- SERVICE SLIDER CSS START -------
+---------------------------------------*/
+.service-slider .single-service-box {
+    box-shadow: 0 0 5px #666;
+    margin: 3px;
+}
+/*-------------------------------------
+------- SERVICE SLIDER CSS END --------
+--------------------------------------*/
+
+/*-----------------------------------
+------- CHOOSE AREA CSS START -------
+------------------------------------*/
+.single-choose-box .single-skill-box,
+.single-choose-box .single-skill-box h4,
+.single-choose-box .single-skill-box h1 {
+    color: #fff;
+}
+/*----------------------------------
+------- CHOOSE AREA CSS END --------
+-----------------------------------*/
+
+/*----------------------------------------
+------- TESTIMONIAL AREA CSS START -------
+-----------------------------------------*/
+.home2 .testimonial-slide .owl-dots {
+    text-align: center;
+}
+.home2 .single-testimonial-box {
+    background: #0032ab;
+}
+/*---------------------------------------
+------- TESTIMONIAL AREA CSS END --------
+----------------------------------------*/
+
+/*---------------------------------
+------- TEAM AREA CSS START -------
+----------------------------------*/
+.team-area  {
+    background: url(../img/team-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+.team-area::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    background: #0032ab;
+}
+.team-area h2 {
+    color: #fff;
+}
+/*--------------------------------
+------- TEAM AREA CSS END --------
+---------------------------------*/
+
+/*-----------------------------------
+------ PRICING AREA CSS START -------
+------------------------------------*/
+.single-pricing-box2 {
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 0 8px #bbb;
+}
+.single-pricing-box2 .pricing-box-top {
+    background: url(../img/service/service5.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding: 40px 0 80px;
+}
+.single-pricing-box2 .pricing-box-top::before {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0032ab;
+    opacity: 0.8;
+}
+.single-pricing-box2 .pricing-box-overlay {
+    box-shadow: 0 0 5px #999;
+    transition: 0.4s;
+}
+.pricing-box2-bottom {
+    padding: 75px 15px 30px;
+}
+.pricing-box2-bottom li {
+    max-width: 250px;
+    margin: auto;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+.pricing-box2-bottom li:last-child {
+    border: none;
+}
+.pricing-box2-bottom ul {
+    margin-bottom: 15px;
+}
+.single-pricing-box2:hover .pricing-box-overlay {
+    background: #f6a604;
+    box-shadow: none;
+    color: #fff;
+}
+/*----------------------------------
+------- PRICING AREA CSS END -------
+-----------------------------------*/
+
+/*-----------------------------------
+----- CALCULATOR AREA CSS START -----
+------------------------------------*/
+.calculator-area2 {
+    background: url(../img/calculator-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+.calculator-area2::after {
+    content: "";
+    top: 0;
+    right: 0;
+    opacity: 0.75;
+    width: 51%;
+    bottom: 0;
+    background: #0032ab;
+    z-index: -1;
+    position: absolute;
+}
+/*----------------------------------
+----- CALCULATOR AREA CSS END ------
+-----------------------------------*/
+
+/*--------------------------------------
+-------- PORTFOLIO AREA CSS START -------
+---------------------------------------*/
+.portfolio-content2 {
+    height: 560px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.portfolio-bg-6 {
+    background-image: url(../img/portfolio/portfolio6.jpg);
+}
+.portfolio-bg-7 {
+    background-image: url(../img/portfolio/portfolio7.jpg);
+}
+.portfolio-bg-8 {
+    background-image: url(../img/portfolio/portfolio8.jpg);
+}
+.portfolio-bg-9 {
+    background-image: url(../img/portfolio/portfolio9.jpg);
+}
+.portfolio-content2 .portfolio-box-overlay a {
+    color: #f6a604;
+}
+/*---------------------------------------
+--------- PORTFOLIO AREA CSS END --------
+----------------------------------------*/
+
+/*------------------------------------
+--- HOME 3 PAGE DEFAULT CSS START -----
+--------------------------------------*/
+.home3 .partner-area,
+.home3 .newsletter-right button,
+.home3 .footer,
+.home3 .single-post:hover .theme-btn,
+.home3 .choose-area::before,
+.home3 .choose-area::after,
+.home3 .testimonial-slide .owl-dot,
+.home3 .owl-dot,
+.home3 .single-pricing-box2 .pricing-box-top::before,
+.home3 .team-area::before,
+.home3 .menubar.sticky,
+.home3 ul.slicknav_nav,
+.home3 .mainmenu li ul,
+.home3 .owl-nav div:hover,
+.home3 .menu-area,
+.home3 .header-top {
+    background: #0c1239;
+}
+.home3 .widget li i,
+.home3 .widget li a:hover,
+.home3 .post-author a i,
+.home3 .post-author a i,
+.home3 .post-author a:hover,
+.home3 .post-details a h4:hover,
+.home3 .single-skill-box i,
+.home3 .portfolio-box-overlay a,
+.home3 .popup-youtube i:hover,
+.home3 .hero-area-content h1 span,
+.home3 .menubar li a:hover,
+.home3 .menubar li.active > a,
+.home3 .header-top-content a:hover,
+.home3 .header-top-content li i {
+    color: #00baff;
+}
+.home3 .info-icon i {
+    color: #00baff;
+    border: 1px solid #00baff;
+}
+.home3 .info-icon i:hover {
+    background: #00baff;
+    color: #fff;
+}
+.home3 .newsletter,
+.home3 .team-member-info,
+.home3 .testimonial-slide .owl-dot.active,
+.home3 .single-pricing-box2:hover .pricing-box-overlay,
+.home3 .owl-dot.active,
+.home3 .menu-right button {
+    background: #00baff;
+}
+.home3 .widget-social-icons a:hover {
+    background: #00baff;
+    border-color: #00baff;
+}
+.home3 .hero-area-content .theme-btn {
+    border: none;
+}
+/*-------------------------------------
+------ HOME 3 PAGE DEFAULT CSS END -----
+--------------------------------------*/
+
+/*-----------------------------------
+-------- HERO AREA CSS START --------
+------------------------------------*/
+.hero-area-video {
+    padding: 130px 0 100px;
+    z-index: 1;
+    position: relative;
+    background-image: url(../img/hero-area/hero-area-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: -30px;
+}
+
+.hero-area-video::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    background: #000000;
+}
+
+.theme-btn5 {
+    background: #00baff;
+}
+
+.theme-btn5:hover {
+    background: #0c1239;
+}
+.theme-btn4 {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.theme-btn4:hover {
+    background: #00baff;
+    border: 1px solid #00baff;
+}
+/*--------------------------------------
+---------- HERO AREA CSS END -----------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- SERVICE AREA CSS START --------
+---------------------------------------*/
+.service-box3 {
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+	border: 1px solid #ddd;
+    padding: 60px 10px 30px;
+}
+
+.service-box3 p {
+    margin: 15px 0;
+}
+
+.service-box3 .service-box-icon i {
+    color: #ff0000;
+    box-shadow: 0 0 2px #666;
+}
+.service-box3:hover .service-box-icon i {
+    background: #ff0000;
+    color: #fff;
+    box-shadow: none;
+}
+.home3 .service-box3 .service-box-icon i {
+    color: #00baff;
+}
+.home3 .service-box3:hover .service-box-icon i {
+    color: #fff;
+}
+.home3 .service-box3:hover .service-box-icon i {
+    background: #00baff;
+}
+/*--------------------------------------
+-------- SERVICE AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+---------- ABOUT AREA CSS START --------
+---------------------------------------*/
+.about-area {
+    z-index: 1;
+    position: relative;
+    background-image: url(../img/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    background-size: cover;
+}
+.about-area::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    width: 100%;
+    bottom: 0;
+    background: #0c1239;
+    z-index: -1;
+    position: absolute;
+}
+.about-area h3 {
+    color: #fff;
+}
+.about-area ul li i {
+    color: #00baff;
+}
+/*--------------------------------------
+--------- ABOUT AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+------- PORTFOLIO AREA CSS START -------
+---------------------------------------*/
+.portfolio-bg-10 {
+    background-image: url('../img/portfolio/portfolio10.jpg');
+    grid-row: span 2;
+}
+.portfolio-bg-11 {
+    background-image: url('../img/portfolio/portfolio11.jpg');
+}
+.portfolio-bg-12 {
+    background-image: url('../img/portfolio/portfolio12.jpg');
+}
+.portfolio-bg-13 {
+    background-image: url('../img/portfolio/portfolio13.jpg');
+}
+.portfolio-bg-14 {
+    background-image: url('../img/portfolio/portfolio14.jpg');
+}
+.portfolio-content3 {
+    height: 650px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+/*--------------------------------------
+------- PORTFOLIO AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+------- TESTIMONIAL AREA CSS START -----
+---------------------------------------*/
+.author-info p {
+	font-weight: 600;
+	font-size: 16px;
+}
+.home3 .single-testimonial-box {
+    background: #0c1239;
+    text-align: center;
+}
+
+.home3 .single-testimonial-box .author {
+    margin: 0 auto 13px;
+}
+
+.home3 .single-testimonial-box .author-info i {
+    color: #00baff;
+}
+
+.home3 .single-testimonial-box .author-info {
+    margin-bottom: 10px;
+}
+/*--------------------------------------
+------- TESTIMONIAL AREA CSS END -------
+---------------------------------------*/
+
+/*--------------------------------------
+--------- SKILLS AREA CSS START --------
+---------------------------------------*/
+.skills-area {
+    background: url(../img/skills-bg.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.skills-area::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    background: #0c1239;
+}
+.skills-area h2,
+.skills-area ,
+.skills-area h4,
+.skills-area h1 {
+    color: #fff;
+}
+/*--------------------------------------
+-------- SKILLS AREA CSS END -----------
+---------------------------------------*/
+
+/*--------------------------------------
+--------- GET A QUOTE CSS START --------
+---------------------------------------*/
+.contact-form ,
+.contact-form textarea,
+.contact-form input,
+.contact-form textarea::-webkit-input-placeholder ,
+.contact-form input::-webkit-input-placeholder {
+    color: #fff;
+}
+.contact-form textarea {
+    height: 150px;
+}
+/*--------------------------------------
+--------- GET A QUOTE CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- ABOUT 1 PAGE CSS START --------
+---------------------------------------*/
+.breadcrumb-area {
+    padding: 120px 0 100px;
+    margin-top: -30px;
+    z-index: 1;
+    position: relative;
+    background-image: url(../img/breadcrumb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.breadcrumb-area::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    background: #000000;
+}
+.breadcrumb-area h2 {
+	color: #fff;
+	margin-bottom: 5px;
+}
+.breadcrumb-area li a {
+	color: #fff;
+}
+.breadcrumb-area li::before {
+    content: "/";
+    margin: 0 8px 0 5px;
+}
+.breadcrumb-area li:first-child::before {
+	display:none;
+}
+.breadcrumb-area li {
+    display: inline-block;
+}
+.breadcrumb-area li a:hover,
+.breadcrumb-area li.active a {
+    color: #ff0000;
+}
+/*--------------------------------------
+--------- ABOUT 1 PAGE CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+--------- BLOG PAGE CSS START ----------
+---------------------------------------*/
+.pagination {
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+}
+.pagination li {
+    display: inline-block;
+}
+.pagination li a {
+    background-color: #0c1239;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+}
+.pagination li.active a, .pagination li a:hover {
+    background-color: #ff0000;
+    color: #000;
+}
+/*--------------------------------------
+--------- BLOG PAGE CSS END ----------
+---------------------------------------*/
+
+/*--------------------------------------
+------ BLOG DETAILS PAGE CSS START -----
+---------------------------------------*/
+.blog-details h4.post-title {
+    margin: 20px 0 2px;
+	font-size: 22px;
+}
+.blog-details .post-author {
+    margin-bottom: 12px;
+}
+.blog-details > p {
+    margin-bottom: 15px;
+}
+.blog-detail-middle {
+    display: flex;
+}
+.blog-detail-middle img {
+    padding-right: 20px;
+    max-width: 40%;
+}
+.blog-detail-middle {
+    margin-bottom: 20px;
+}
+.blog-detail-middle p {
+    margin: 20px 0;
+}
+.about-author {
+    padding-top: 25px;
+}
+.about-author h2 {
+    margin-bottom: 20px;
+}
+.about-author-details {
+    display: flex;
+	padding: 20px;
+	background: #fafafa;
+}
+.author-details-left {
+    flex: 1;
+    margin-right: 15px;
+}
+.author-details-right {
+    flex: 4.2;
+}
+.author-details-right h4 {
+    margin-bottom: 5px;
+}
+.comments-area {
+    margin-top: 40px;
+}
+.comments-area h2 {
+    margin-bottom: 20px;
+}
+.single-comment a {
+    color: #000;
+    margin-right: 20px;
+    display: inline-block;
+}
+.single-comment-left {
+    flex: 1;
+}
+.single-comment-right {
+    flex: 5.5;
+    margin-left: 12px;
+}
+.single-comment {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    padding-bottom: 20px;
+}
+.comments-area li {
+    position: relative;
+}
+.single-comment p {
+    margin-bottom: 5px;
+}
+.comments-area li ul {
+    margin-left: 115px;
+}
+.single-comment::before {
+    content: "";
+    right: 0;
+    left: 115px;
+    background: #aaa;
+    top: 100%;
+    height: 1px;
+    margin: auto;
+    position: absolute;
+}
+.comments-area li ul .single-comment::before {
+    left: 0;
+}
+.blog-reply {
+	margin-top: 40px;
+}
+.contact-us-area form input,
+.blog-reply form input {
+	margin-bottom: 25px;
+	padding: 9px 20px;
+}
+.contact-us-area form textarea,
+.blog-reply form textarea {
+	margin-bottom: 15px;
+	height: 120px;
+}
+.blog-reply form {
+	margin-top: 25px;
+}
+.contact-us-area form button,
+.blog-reply form button {
+	border: none;
+	cursor: pointer;
+}
+.sidebar {
+	padding-left: 20px;
+}
+.sidebar-widget {
+    margin-bottom: 40px;
+}
+.sidebar-widget h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.sidebar-widget form button {
+    background: none;
+	cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+}
+.sidebar-widget form {
+    position: relative;
+    border-radius: 9px;
+}
+.sidebar-widget form input {
+    margin-bottom: 0;
+    border-radius: 5px;
+    padding-right: 35px;
+}
+.blog-reply form textarea::-webkit-input-placeholder ,
+.blog-reply form input::-webkit-input-placeholder ,
+.sidebar-widget form input::-webkit-input-placeholder {
+    color: #333;
+}
+.sidebar-widget ul li a {
+    background: #fafafa;
+    display: block;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+.sidebar-widget ul li {
+    padding: 5px 0;
+}
+.sidebar-widget ul li a:hover {
+    background: #ff0000;
+    color: #fff;
+}
+.sidebar-widget ul li a span {
+    float: right;
+}
+.widget-post-info i {
+    color: #ff0000;
+    margin-right: 5px;
+}
+.widget-post {
+    display: flex;
+    padding: 8px 0;
+}
+.widget-post-img {
+    flex: 1;
+}
+.widget-post-info {
+    flex: 3.2;
+    margin-left: 15px;
+}
+.widget-post-info span {
+    font-size: 12px;
+}
+.widget-post-info p {
+    margin-bottom: 5px;
+}
+.widget-tags a {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+	border-radius: 5px;
+}
+.widget-tags a:hover {
+    color: #fff;
+    background: #000;
+}
+.sidebar-widget.widget-quote {
+    margin-bottom: 0;
+    background: #0c1239;
+    padding: 35px;
+    color: #fff;
+}
+.sidebar-widget.widget-quote h4 {
+    color: #fff;
+}
+.sidebar-widget.widget-quote p {
+    margin-bottom: 15px;
+}
+.sidebar-widget.widget-quote h4 i {
+    margin-right: 6px;
+}
+/*--------------------------------------
+------- BLOG DETAILS PAGE CSS END ------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- 404 PAGE CSS START --------
+---------------------------------------*/
+.four04 {
+    text-align: center;
+}
+.four04 h1 {
+    font-size: 200px;
+    font-weight: 600;
+    line-height: 135px;
+    margin-bottom: 35px;
+}
+.four04 input {
+    padding-right: 35px;
+    margin: 0;
+}
+.four04 button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: auto;
+    background: none;
+    border: none;
+    right: 10px;
+}
+.four04 form {
+    position: relative;
+    max-width: 400px;
+    margin: 17px auto;
+}
+.four04 h4 {
+    margin-top: 8px;
+}
+/*--------------------------------------
+--------- 404 PAGE CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- SUCCESS AREA CSS START --------
+---------------------------------------*/
+
+/*--------------------------------------
+--------- SUCCESS AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- SCROLL-TO-TOP CSS START --------
+---------------------------------------*/
+.scrollToTop i {
+    width: 40px;
+	display: none;
+    height: 40px;
+    line-height: 39px;
+    background: #000;
+	display: none;
+    color: #fff;
+    position: fixed;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    text-align: center;
+	font-size: 18px;
+}
+.scrollToTop:hover {
+    background: #0c1239;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.scrollToTop:focus {
+    border: 1px solid #fff;
+    color: #fff;
+}
+/*--------------------------------------
+--------- SCROLL-TO-TOP CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- PRE LOADER CSS START --------
+---------------------------------------*/
+#preloader {
+  position: fixed;
+  z-index: 99999999999;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  background: #fff url("../img/loader.gif") no-repeat center center;
+}
+/*--------------------------------------
+--------- PRE LOADER CSS END ---------
+---------------------------------------*/
